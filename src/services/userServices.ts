@@ -17,7 +17,6 @@ export const getUserById = async (id: string): Promise<any> => {
   try {
     console.log('im heree')
     const reply = await client.get(id);
-    console.log('reply', reply)
     if (reply) {
         console.log('reply', reply)
       return JSON.parse(reply);
